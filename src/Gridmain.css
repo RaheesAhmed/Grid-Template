@@ -1,0 +1,91 @@
+/* Main .grid-wrappper */
+.grid-wrappper {
+  display: grid;
+
+  grid-template-areas:
+    "div1 div2 div2 div2 div2 div2 "
+    "div3 div3 div3 div3 div3 div4"
+    "div5 div5 div6 div6 div7 div7"
+    "div8 div9 div9 div9 div9 div9"
+    "div10 div10 div10 div10 div10 div10"
+    "div11 div11 div11 div11 div11 div11";
+
+  grid-gap: 10px;
+}
+
+/* Grid div color */
+.grid-wrappper > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  color: white;
+}
+
+/* All div's start here */
+.div1 {
+  background: brown;
+
+  grid-area: div1;
+}
+.div2 {
+  background: red;
+  grid-area: div2;
+}
+.div3 {
+  background: rgb(124, 44, 44);
+  grid-area: div3;
+}
+.div4 {
+  background: rgb(1, 104, 6);
+  grid-area: div4;
+}
+.div5 {
+  background: rgb(5, 197, 63);
+  grid-area: div5;
+}
+.div6 {
+  background: rgb(5, 197, 63);
+  grid-area: div6;
+}
+.div7 {
+  background: rgb(5, 197, 63);
+  grid-area: div7;
+}
+.div8 {
+  background: rgb(155, 4, 97);
+  grid-area: div8;
+}
+.div9 {
+  background: rgb(58, 8, 8);
+  grid-area: div9;
+}
+.div10 {
+  background: rgb(12, 10, 14);
+  grid-area: div10;
+  height: 200px;
+}
+.div11 {
+  background: red;
+  grid-area: div11;
+}
+
+/* Alligment of div 10 items */
+.div10 > div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.div10 {
+  display: grid;
+  padding: 10px !important;
+  grid-gap: 5px;
+  grid-template-columns: repeat(4, 1fr);
+}
+/* Div10 div's backgroud color */
+.nested-div1,
+.nested-div2,
+.nested-div3,
+.nested-div4 {
+  background: rgb(187, 32, 32);
+}
